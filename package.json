@@ -1,0 +1,24 @@
+{
+  "name": "ci-cd-multibranch",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js",
+    "test": "jest",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "build": "echo 'Building application...' && mkdir -p dist && cp index.js dist/"
+  },
+  "author": "bilalkhattak",
+  "license": "ISC",
+  "description": "Multi-branch CI/CD deployment example",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "jest": "^29.7.0",
+    "supertest": "^6.3.4"
+  }
+}
